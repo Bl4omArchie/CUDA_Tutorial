@@ -13,8 +13,7 @@ Warning: if you are installing CUDA on ubuntu, you will be lead to those command
 wget https://developer.download.nvidia.com/compute/cuda/12.0.0/local_installers/cuda_12.0.0_525.60.13_linux.run*
 sudo sh cuda_12.0.0_525.60.13_linux.run
 ``` 
-
-if the second one doesn't work, you may use this one instead: sudo sh ./cuda_12.0.0_525.60.13_linux.run
+If the second command doesn't work, you may use this one instead: sudo sh ./cuda_12.0.0_525.60.13_linux.run
 
 Also, if you are using VS code, a few extension can be installed by typing Nvidia in the market place.
 
