@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <cuda_runtime.h>
 
 __global__ void mul(int *x, int *y, int *z) {
     *z = *x * *y;

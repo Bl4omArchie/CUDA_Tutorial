@@ -58,6 +58,19 @@ Here, you need to indicate your specification:
 Download the file, excute it and your driver is now installed !
 
 
+## Make your first CUDA program
+
+Compile your .cu file: 
+```
+nvcc -c src/mult.cu -o mult.o
+```
+
+Compile your C++ file:
+```
+g++ -o main main.cpp src/mult.cu.o -I<path_to_cuda_include> -L<path_to_cuda_lib> -lcudart
+```
+
+
 ## Tutorials about CUDA 
 
 - Tutorials from installation to practising: https://developer.nvidia.com/how-to-cuda-c-cpp
