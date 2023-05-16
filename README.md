@@ -45,34 +45,45 @@ What I'm suggesting you is to take the third option, because you only need two c
 
 exemple: ![install](pic/CudaInstaller.png)
 
-- **Automatic script**:
-If you are on Linux, enjoy the script I've made so you can install everything automatically, the file is called LinuxCudaInstaller.sh. Install it, give it the execution right with ```chmod +x LinuxCudaInstaller.sh``` and everything will setup fine.
+### Automatic installation on Linux
+If you are on Linux, enjoy the script I've made so you can install everything automatically, the file is called linuxInstaller.sh. Install it, give it the execution right with ```chmod +x linuxInstaller.sh``` and everything will setup fine.
 
-- **Exception:** You have a Graphical Card but still you get an error saying your GPU isn't CUDA-capable 
+### Installation doesn't work
 
-In this case, your may not have installed your drivers ! To do so, go on this website: https://www.nvidia.com/en-us/geforce/drivers/
+There are different cases that make the installation failed:
+- **Your Graphic Card isn't recognized by your system**: You have a graphic card but it said you are not CUDA-capable. To fix that you need to install the correct driver here: https://www.nvidia.com/en-us/geforce/drivers/
+- **Your in a virtual machine**: I personnaly tryied to installed CUDA toolkit on VMware and my CG wasn't recognized. To fix that you need to add the PCI option in the settings of your virtual machine.
+- **Cannot find compiler 'cl.exe' in PATH**: if you are on Windows, this error can occure. In this case find cl.exe and put it in your PATH. 
 
-Here, you need to indicate your specification:
-![spec](pic/pilotes.png)
-
-Download the file, excute it and your driver is now installed !
+My personnal choice is to use WSL 2 on Windows, it was the only place where my GC was recognize by the system and where I got no error at the compilation...
+However, if you have a regular installation of Linux, and not with a virtual machine, it should work normally.
 
 
-## Make your first CUDA program
+## Compile and test the sample
 
-Compile your .cu file: 
+It is now time to see whats Cuda look like and compile you first program. To do so, you will need a compiler called **nvcc**. It is already installed in the toolkit and very simple to use.
+
+### First cuda code
+The first way to code with Cuda is to put everything is a .cu file combining cuda and c/c++.
+You have two examples of code in the **samples** folder: **hello.cu** and **mult.cu**.
+
+The first file is a hello world program and the second one a simple multiplication function.
+
+
+Let's compile the mult.cu file:
 ```
-nvcc -c src/mult.cu -o mult.o
+nvcc samples/mult.cu -o mult.o
 ```
 
-Compile your C++ file:
+You now have an executable file: **mult.o**. Then, execute the binary: 
 ```
-g++ -o main main.cpp src/mult.cu.o -I<path_to_cuda_include> -L<path_to_cuda_lib> -lcudart
+./mult.o
 ```
+
 
 
 ## Tutorials about CUDA 
 
-- Tutorials from installation to practising: https://developer.nvidia.com/how-to-cuda-c-cpp
+- CUDA toolkit installation: https://docs.nvidia.com/cuda/cuda-quick-start-guide/contents.html
 
 - CUDA C++ Programming Guide: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#
