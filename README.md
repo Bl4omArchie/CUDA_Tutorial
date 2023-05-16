@@ -59,20 +59,20 @@ My personnal choice is to use WSL 2 on Windows, it was the only place where my G
 However, if you have a regular installation of Linux, and not with a virtual machine, it should work normally.
 
 
-## Compile and test the sample
+## Let's code
 
 It is now time to see whats Cuda look like and compile you first program. To do so, you will need a compiler called **nvcc**. It is already installed in the toolkit and very simple to use.
 
 ### First cuda code
 The first way to code with Cuda is to put everything is a .cu file combining cuda and c/c++.
-You have two examples of code in the **samples** folder: **hello.cu** and **mult.cu**.
+You have two examples of code in the **src** folder: **hello.cu** and **mult.cu**.
 
 The first file is a hello world program and the second one a simple multiplication function.
 
 
 Let's compile the mult.cu file:
 ```
-nvcc samples/mult.cu -o mult.o
+nvcc src/mult.cu -o mult.o
 ```
 
 You now have an executable file: **mult.o**. Then, execute the binary: 
