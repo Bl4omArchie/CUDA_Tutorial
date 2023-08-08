@@ -1,6 +1,6 @@
 # CUDA Tutorial
 
-This tutorial will guid your from the installation of CUDA Toolkit to some coding example and implementation.
+Welcome to this tutorial. I will guid your from the installation of CUDA Toolkit to some coding samples and implementation.
 
 Brievely:
 - **What is CUDA ?**
@@ -16,7 +16,7 @@ The first part of the tutorial will explains you how to setup everything.
 - **How can I use CUDA ?**
 
 You can use it for **AI and Data Science**, **High Performance Computing**, **Design and Simulation**, **Data Center and Cloud Computing** and many more.
-Further information here: https://www.nvidia.com/en-us/
+There is the NGC catalog where you can find a very large collection of  software developped by Nvidia: [click here](https://catalog.ngc.nvidia.com/collections)
 
 
 ## Installation of CUDA Toolkit
@@ -26,7 +26,7 @@ Before you get into it, you obviously need a Graphical Card. If you don't have o
 But even if you have, you must verify that your Graphical Card is CUDA-capable.
 In order to check this, find your Graphical Card model on this website: https://developer.nvidia.com/cuda-gpus
 
-If now your sur that Graphical Card is CUDA capable, let's begin !
+If you are now sur that your Graphical Card is CUDA capable, let's begin !
 
 
 ### Installation on Windows and Linux
@@ -59,14 +59,19 @@ My personnal choice is to use WSL 2 on Windows, it was the only place where my G
 However, if you have a regular installation of Linux, and not with a virtual machine, it should work normally.
 
 
-## Let's code
+## CUDA programmation
 
-It is now time to see whats Cuda look like and compile you first program. To do so, you will need a compiler called **nvcc**. It is already installed in the toolkit and very simple to use.
+As I said in the introduction, you can code with your GPU in severals languages.
+CUDA GPU programming is integrated in many framework (ie: tensorflow, numba...) so you can chose your favourite language.
+In the following sections, we will code in C/C++ and python. I will also show you the python framework Numba. 
 
-### First cuda code
-The first way to code with Cuda is to put everything is a .cu file combining cuda and c/c++.
-You have two examples of code in the **src** folder: **hello.cu** and **mult.cu**.
 
+
+### Hello world in CUDA (C/C++)
+
+In order to code in a low level language like C++, you need a specefic compilator called **nvcc** which is already installed in the CUDA toolkit.
+
+In the **src** folder, you have two codes samples: **hello.cu** and **mult.cu**.
 The first file is a hello world program and the second one a simple multiplication function.
 
 
@@ -79,11 +84,39 @@ You now have an executable file: **mult.o**. Then, execute the binary:
 ```
 ./mult.o
 ```
+You have executed your first program with your GPU !
 
 
 
-## Tutorials about CUDA 
+## Areas where you can develop your CUDA skills
+
+- [Artificial Intelligence & Deep Learning](https://developer.nvidia.com/deep-learning)
+- [Autonomous Machines](https://developer.nvidia.com/embedded-computing)
+- [Graphics & Simulation](https://developer.nvidia.com/graphics-research-tools)
+- [High Performance Computing](https://developer.nvidia.com/language-solutions)
+- [Autonomous Vehicles](https://developer.nvidia.com/drive)
+- [Tools and Management](https://developer.nvidia.com/tools-overview)
+
+There is the page where you can find all the details: [click here](https://developer.nvidia.com/solutions-and-industries)
+
+
+
+## Nvidia learning
+
+Nvidia offer many possibilities to learn and train GPU computing skills at a personnal, profesionnal and enterprise scale.
+There is a list with all type of formation available:
+
+- [Online course (free and $)](https://www.nvidia.com/en-us/training/online/)
+- [Enterprise solutions (contact only)](https://www.nvidia.com/en-us/training/enterprise-solutions/)
+- [Workshop (contact only)](https://www.nvidia.com/en-us/training/instructor-led-workshops/)
+- [Learning path](https://nvdam.widen.net/s/brxsxxtskb/dli-learning-journey-2009000-r5-web): Slide that gives a overwiew of the field
+
+
+
+## Other ressources about CUDA 
 
 - CUDA toolkit installation: https://docs.nvidia.com/cuda/cuda-quick-start-guide/contents.html
 
 - CUDA C++ Programming Guide: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#
+
+- CUDA python tutorial: https://www.vincent-lunot.com/post/an-introduction-to-cuda-in-python-part-1/
