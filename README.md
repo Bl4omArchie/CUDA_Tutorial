@@ -1,6 +1,6 @@
 # CUDA Tutorial
 
-This tutorial will guid your from the installation of CUDA Toolkit to some coding example and implementation.
+Welcome to this tutorial. I will guid your from the installation of CUDA Toolkit to some coding samples and implementation.
 
 Brievely:
 - **What is CUDA ?**
@@ -15,7 +15,7 @@ CUDA Toolkit provides an environnement that allows you to compile CUDA code
 - **What is CUDA for ?**
 
 You can use it for **AI and Data Science**, **High Performance Computing**, **Design and Simulation**, **Data Center and Cloud Computing** and many more.
-Further information here: https://www.nvidia.com/en-us/
+There is the NGC catalog where you can find a very large collection of  software developped by Nvidia: [click here](https://catalog.ngc.nvidia.com/collections)
 
 
 ## Installation of CUDA Toolkit
@@ -54,3 +54,5 @@ You now have an executable file: **mult.o** and you can execute it:
 - CUDA toolkit installation: https://docs.nvidia.com/cuda/cuda-quick-start-guide/contents.html
 
 - CUDA C++ Programming Guide: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#
+
+- CUDA python tutorial: https://www.vincent-lunot.com/post/an-introduction-to-cuda-in-python-part-1/
