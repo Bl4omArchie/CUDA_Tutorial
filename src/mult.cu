@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 __global__ void mul(int *x, int *y, int *z) {
-    *z = *x * *y;
+    *z = (*x) * (*y);
 }
 
 int main(void) {
