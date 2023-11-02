@@ -30,7 +30,7 @@ You can find the tutorials in the **doc** folder.
 ## Let's code
 
 ### Compilation
-The CUDA toolkit allows you to compile CUDA code. The file extension look like this: **.cu** and the syntax is pretty much the same that the C language. You can find some examples in the **src** folder.
+The CUDA toolkit allows you to compile CUDA code. The file extension look like this: **.cu** and the syntax is pretty much like C++ language. You can find some examples in the **src** folder.
 Within the toolkit, a compiler has been installed: **nvcc**. Let's try it !
 
 We're going to compile the mult.cu file:
