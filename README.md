@@ -21,7 +21,6 @@ There is the NGC catalog where you can find a very large collection of  software
 ## Installation of CUDA Toolkit
 
 You can install CUDA on Windows and Linuw but my suggestion is to install the linux version and this why:
-- CUDA toolkit must have a linux environnement because it need gcc to compile programs. So in any case you must have linux.
 - Linux installation is faster, take less space on your hard drive and code performance are always better with linux.
 - Developping CUDA code with Linux is more convenient: you can chose your IDLE, create project more faster and don't have tons of depencies like Visual Studio.
 
