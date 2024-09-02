@@ -1,5 +1,7 @@
 # CUDA Tutorial
 
+## Introduction
+
 Welcome to this tutorial. I will guid your from the installation of CUDA Toolkit to some coding samples and implementation.
 
 Brievely:
@@ -18,13 +20,16 @@ You can use it for **AI and Data Science**, **High Performance Computing**, **De
 There is the NGC catalog where you can find a very large collection of  software developped by Nvidia: [click here](https://catalog.ngc.nvidia.com/collections)
 
 
+
 ## Installation of CUDA Toolkit
 
-You can install CUDA on Windows and Linuw but my suggestion is to install the linux version and this why:
+You can install CUDA on Windows and Linux but my suggestion is to install the linux version and this why:
 - Linux installation is faster, take less space on your hard drive and code performance are always better with linux.
 - Developping CUDA code with Linux is more convenient: you can chose your IDLE, create project more faster and don't have tons of depencies like Visual Studio.
 
-You can find the tutorials in the **doc** folder.
+**Special mention for WSL**: I didn't succeed to install CUDA Toolkit on WSL. I'm struggling with my CG detection and it make the installation impossible. If you have a solution I will be pleased to know about it. 
+
+You can find the tutorials in the **docs/** folder.
 
 ## Let's code
 
@@ -42,13 +47,14 @@ You now have an executable file: **mult.o** and you can execute it:
 ./mult.o
 ```
 
+## Deep learning softwares and pre-trained models
 
-### Framework
-...
+[More software for DL](https://developer.nvidia.com/deep-learning-software)
+
+[NGC Catalog](https://catalog.ngc.nvidia.com/?filters=&orderBy=weightPopularDESC&query=&page=&pageSize=)
 
 
-
-## Tutorials about CUDA 
+# Ressources
 
 - CUDA toolkit installation: https://docs.nvidia.com/cuda/cuda-quick-start-guide/contents.html
 

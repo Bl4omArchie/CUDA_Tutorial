@@ -13,14 +13,14 @@ Before installing CUDA on Linux, make sure your system meets the following minim
 For futher information, check the official page: https://docs.nvidia.com/cuda/cuda-installation-guide-linux/
 
 ## Automatic installation
-For the installation you can do it by yourself or enjoy the script I've made so you can install everything automatically, the file is called linuxInstaller.sh. <br/>
+For the installation you can do it by yourself or enjoy the script I've made so you can install everything automatically, the file is called linuxInstaller. <br/>
 First, give it the execution right with 
 ```
-chmod +x linuxInstaller.sh
+chmod +x linuxInstaller
 ``` 
 Then execute the script and CUDA toolkit will be installed: 
 ```
-./LinuxInstaller
+./linuxInstaller
 ```
 
 ## Manual installation
